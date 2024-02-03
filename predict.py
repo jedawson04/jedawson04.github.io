@@ -17,7 +17,7 @@ from fastai.text.all import *
 from fastai.learner import * # put these in the json file
 from pyscript import document 
 
-def predict(event):
+def predictOn(event):
     input_text = document.querySelector("#prediction") # grabs the users entered text to predict on
     data = input_text.value 
     output_div = document.querySelector("#output")
