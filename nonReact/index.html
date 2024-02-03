@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title> PyScript Test for Predictions </title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />  
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+  <!-- body here -->
+  <div>  
+    <h1> Welcome to our subject and sentiment classification model! </h1>
+    <p> Here, you can test the subject and sentiment of any passage of text you enter</p>
+    <p> To get started, enter the text you'd like to predict on in the textbox below. Once you have done this, click the button below to predict! </p>
+ </div>
+  <form>
+    <div>
+      <label for="prediction">Enter data to predict on: </label>
+      <textarea type="text" id="prediction" name="Data" > </textarea>
+    </div>
+      <button py-click="predict">Predict!</button>
+  </form>
+  <div id = "output"></div>
+  <script type="py" src="./predict.py" config="./pyscript.json"></script>
+      <!-- {/* basic idea -- figure out a way to laod both models, figure out a how to let the user enter text, predict on the text they enter and return the results to the user */} -->
+</body>
+</html>
